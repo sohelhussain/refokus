@@ -16,7 +16,7 @@ export const Work = () => {
         {url: "https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/66b37f3457b4b40a7d9d2ea3_arqitel-special-feature-02.webp", top: "65%", left: "55%", isActive: false},
     ]
     return (
-        <div className="w-full">
+        <div className="w-full mt-10">
             <div className="max-w-screen-xl relative mx-auto text-center">
                 <h1 className="text-[30vw] leading-none font-medium tracking-tight select-none">work</h1>
                 <div className="w-full h-full absolute top-0 left-0">
