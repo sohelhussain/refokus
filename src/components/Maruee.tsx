@@ -1,0 +1,8 @@
+
+export default function Maruee({imageUrl}: {imageUrl: string[]}){
+
+    return <div className="w-full flex p-5 gap-10 overflow-hidden">
+        {imageUrl.map(image => <img src={image} alt="maruee" className="w-32"  />)} 
+        {imageUrl.map(image => <img src={image} alt="maruee" className="w-32"  />)} 
+    </div>
+}

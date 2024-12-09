@@ -15,7 +15,7 @@ export default function Product(Product: ProductProps){
             <div className="dets w-1/3">
                 <p className="mb-10">{Product.description}</p>
                 <div className="flex items-center gap-10">
-                {Product.live && <Button title="Live Demo" />}
+                {Product.live && <Button />}
                 {Product.case && <Button title="case Study" />}
                 </div>
             </div>

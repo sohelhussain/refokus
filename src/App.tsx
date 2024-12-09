@@ -2,6 +2,7 @@ import { Navbar } from "./components/Navbar"
 import { Work } from "./components/Work"
 import { Stripes } from "./components/Stripes"
 import Products from "./components/Products"
+import Maruees from "./components/Maruees"
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Work />
       <Stripes />
       <Products />
+      <Maruees />
     </div>
   )
 }
