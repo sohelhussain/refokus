@@ -15,7 +15,7 @@ export default function Products(){
         {title: "yahoo", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis suscipit corporis dicta officiis provident ad excepturi nemo?", live: true, case: false},
         {title: "ttr", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis suscipit corporis dicta officiis provident ad excepturi nemo?", live: true, case: false},
     ]
-    return <div>
+    return <div className="mt-32">
         {prod.map(prod => <Product title={prod.title} description={prod.description} live={prod.live} case={prod.case} />)}
     </div>
 }
