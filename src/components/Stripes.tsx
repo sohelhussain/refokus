@@ -15,7 +15,7 @@ export const Stripes = () => {
     ]
     return (
         <div className="w-full flex mt-32">
-            {data.map((elem, index) => <Stripe url={elem.url} number={elem.number} />)}
+            {data.map((elem, index) => <Stripe key={index} url={elem.url} number={elem.number} />)}
         </div>
     )
 }

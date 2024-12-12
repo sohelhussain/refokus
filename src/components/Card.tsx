@@ -23,7 +23,7 @@ const cardSize: RecodeCardSize = {
 
 
 export default function Card({width, left, hover}: ICard){
-    console.log(hover);
+
     return <div className={` p-5 min-h-[30rem] flex flex-col hover:${hover} bg-zinc-800 rounded-xl ${cardSize[width]} justify-between`}>
        <div className="w-full">
         <div className="flex justify-between items-center w-full">

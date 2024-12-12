@@ -16,6 +16,6 @@ export default function Products(){
         {title: "ttr", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis suscipit corporis dicta officiis provident ad excepturi nemo?", live: true, case: false},
     ]
     return <div className="mt-32">
-        {prod.map(prod => <Product title={prod.title} description={prod.description} live={prod.live} case={prod.case} />)}
+        {prod.map((prod, index) => <Product key={index} title={prod.title} description={prod.description} live={prod.live} case={prod.case} />)}
     </div>
 }
