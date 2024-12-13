@@ -1,5 +1,5 @@
 import { GoArrowRight } from "react-icons/go";
-
+import {motion} from 'framer-motion';
 
 
 
@@ -11,7 +11,7 @@ type CardWidth = "small" | "large"
 interface ICard {
     width: CardWidth;
     left: boolean;
-    hover?: 'bg-violet-600'
+    hover?: boolean
 }
 
 type RecodeCardSize = Record<CardWidth, string>
@@ -22,9 +22,9 @@ const cardSize: RecodeCardSize = {
 }
 
 
-export default function Card({width, left, hover}: ICard){
+export default function Card({width, left, hover=false}: ICard){
 
-    return <div className={` p-5 min-h-[30rem] flex flex-col hover:${hover} bg-zinc-800 rounded-xl ${cardSize[width]} justify-between`}>
+    return <motion.div whileHover={{backgroundColor: "#7443ff", padding: "25px"}} className={` p-5 min-h-[30rem] flex flex-col bg-zinc-800 rounded-xl ${cardSize[width]} justify-between`}>
        <div className="w-full">
         <div className="flex justify-between items-center w-full">
             heading
@@ -41,5 +41,5 @@ export default function Card({width, left, hover}: ICard){
     )}
         {left && <p className="text-zinc-400 font-light">Explore more projects</p>}
        </div>
-    </div>
+    </motion.div>
 }
