@@ -11,7 +11,6 @@ type CardWidth = "small" | "large"
 interface ICard {
     width: CardWidth;
     left: boolean;
-    hover?: boolean
 }
 
 type RecodeCardSize = Record<CardWidth, string>
@@ -22,7 +21,7 @@ const cardSize: RecodeCardSize = {
 }
 
 
-export default function Card({width, left, hover=false}: ICard){
+export default function Card({width, left}: ICard){
 
     return <motion.div whileHover={{backgroundColor: "#7443ff", padding: "25px"}} className={` p-5 min-h-[30rem] flex flex-col bg-zinc-800 rounded-xl ${cardSize[width]} justify-between`}>
        <div className="w-full">
