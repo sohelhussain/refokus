@@ -11,11 +11,11 @@ interface Images {
 export const Work = () => {
   const [images, setImage] = useState<Images[]>([
         {url: "https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/66b37f3457b4b40a7d9d2ea3_arqitel-special-feature-02.webp", top: "50%", left: "50%", isActive: false},
-        {url: "https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/66b37f3457b4b40a7d9d2ea3_arqitel-special-feature-02.webp", top: "56%", left: "44%", isActive: false},
-        {url: "https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/66b37f3457b4b40a7d9d2ea3_arqitel-special-feature-02.webp", top: "45%", left: "56%", isActive: false},
-        {url: "https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/66b37f3457b4b40a7d9d2ea3_arqitel-special-feature-02.webp", top: "60%", left: "53%", isActive: false},
-        {url: "https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/66b37f3457b4b40a7d9d2ea3_arqitel-special-feature-02.webp", top: "43%", left: "40%", isActive: false},
-        {url: "https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/66b37f3457b4b40a7d9d2ea3_arqitel-special-feature-02.webp", top: "65%", left: "55%", isActive: false},
+        {url: "https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/6697d81b5919f738bad40a7c_Silvr%20-4%203.webp", top: "56%", left: "44%", isActive: false},
+        {url: "https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/6697d84ab75f918dc8617448_YIR%202022%20-4%204.webp", top: "45%", left: "56%", isActive: false},
+        {url: "https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/6697d5b41e4c40f758df5ecf_Remind%20-%204%203.webp", top: "60%", left: "53%", isActive: false},
+        {url: "https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/6697d53e25385e299ff4542b_Showcase%20-%2016%209%20(A).webp", top: "43%", left: "40%", isActive: false},
+        {url: "https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/6697d62264feae5abf67700d_Rainfall%20-%204%203.webp", top: "65%", left: "55%", isActive: false},
     ]);
 
     const {scrollYProgress} = useScroll();

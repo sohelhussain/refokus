@@ -28,11 +28,11 @@ export default function Products(){
         {prod.map((prod, index) => <Product key={index} count={index} mover={mover} title={prod.title} description={prod.description} live={prod.live} case={prod.case} />)}
         <div className="w-full h-full absolute top-0 pointer-events-none">
             <motion.div initial={{y: pos, x: "-50%"}} animate={{y: pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1], duration: .6}} className="w-[32rem] h-[23rem] bg-sky-100 absolute left-[44%] overflow-hidden translate-y-[23rem]  ">
-                <motion.div animate={{y: -pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1], duration: .5}} className="w-full h-full bg-green-100"></motion.div>
-                <motion.div animate={{y: -pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1], duration: .5}} className="w-full h-full bg-yellow-200"></motion.div>
-                <motion.div animate={{y: -pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1], duration: .5}} className="w-full h-full bg-yellow-300"></motion.div>
-                <motion.div animate={{y: -pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1], duration: .5}} className="w-full h-full bg-yellow-400"></motion.div>
-                <motion.div animate={{y: -pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1], duration: .5}} className="w-full h-full bg-yellow-500"></motion.div>
+                <motion.div animate={{y: -pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1], duration: .5}} className="w-full h-full"><img className="w-full h-full object-cover" src="https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/6697d62264feae5abf67700d_Rainfall%20-%204%203.webp" alt="" /></motion.div>
+                <motion.div animate={{y: -pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1], duration: .5}} className="w-full h-full"><img className="w-full h-full object-cover" src="https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/6697d5b41e4c40f758df5ecf_Remind%20-%204%203.webp" alt="" /></motion.div>
+                <motion.div animate={{y: -pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1], duration: .5}} className="w-full h-full"><img className="w-full h-full object-cover" src="https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/6697d53e25385e299ff4542b_Showcase%20-%2016%209%20(A).webp" alt="" /></motion.div>
+                <motion.div animate={{y: -pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1], duration: .5}} className="w-full h-full"><img className="w-full h-full object-cover" src="https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/6697d84ab75f918dc8617448_YIR%202022%20-4%204.webp" alt="" /></motion.div>
+                <motion.div animate={{y: -pos+`rem`}} transition={{ease: [0.76, 0, 0.24, 1], duration: .5}} className="w-full h-full"><img className="w-full h-full object-cover" src="https://cdn.prod.website-files.com/664dc8b6bc52b504509197f0/6697d81b5919f738bad40a7c_Silvr%20-4%203.webp" alt="" /></motion.div>
             </motion.div>
         </div>
     </div>
